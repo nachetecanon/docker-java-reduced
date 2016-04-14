@@ -26,4 +26,8 @@ For specific maven configuration, it's recommended to add a COPY instruction for
 
 It's also recommended if this image is to be used as a base image for other docker projects, to make some cleanup after
  
- building, removing dependencies loaded from ${HOME}/.m2/repository
+ building, removing dependencies loaded from ${HOME}/.m2/repository along with the maven installation ${M2_HOME}.
+ 
+# Size
+
+The size of the built image is about 379M.
