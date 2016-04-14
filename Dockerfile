@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Nacho Cañón <icanon@paradigmatecnologico.com>
+MAINTAINER Nacho Cañón <nachete.canon@gmail.com>
 
 # Install cURL, tar, etc
 RUN apk --update add bash ca-certificates tar wget openssl unzip  alpine-sdk  openssl-dev \
