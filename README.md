@@ -20,6 +20,15 @@ The original image can be built this way
 docker build -t <org_id>/<image_name>
 ```
 
+# Environment variables
+
+The image create the next environment variables
+```
+MAVEN_OPTS=-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+JAVA_HOME=/opt/jdk
+M2_HOME=/opt/apache-maven-3.3.9
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/opt/apache-maven-3.3.9/bin
+```
 # Use
 
 For specific maven configuration, it's recommended to add a COPY instruction for substituting the settins.xml file.
